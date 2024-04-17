@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--white: #FFFFFF;
+	--black: #000000;
+	--softBlack: #242424;
+	--blue: #9CEAF3;
+	--pink: #F78F85;
+	--red: #F5544D;
+	--yellow: #FABD2F;
+	--green: #47D043;
+	--wheat: #F0D098;
+	--navyBlue: #6A77D2;
+	--turquoise: #9CEAF3;
+	--sucessGreen: #5AD786;
+	--errorRed: #F78F85;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+::selection {
+	background-color: var(--black);
+	color: var(--black);
+}
+
+body {
+	padding-top: 40px;
+	padding-left: 150px;
+	padding-right: 150px;
+	background: var(--black);
+	color: var(--light-1);
+	font-family: 'Poppins', cursive;
+	margin: 0;
+}
+
+h1,
+h4,
+h5,
+h6 {
+	color: var(--black);
+	font-weight: bolder;
+	margin: 5px 0;
+}
+
+h2 {
+	color: var(--navyBlue)
+}
+
+p {
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+a {
+	font-weight: bold;
+	color: var(--white);
+}
+
+h3 {
+	font-weight: bold;
+	color: var(--white);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+main {
+	width: calc(100% - 20);
+	height: calc(100vh - 70px);
+	overflow: auto;
+}
+
+footer {
+	font-weight: 600;
+	border-radius: 10px;
+	color: var(--wheat);
+	background: var(--softBlack);
+	padding: 10px;
+	text-align: center;
+	margin-top: 40px;
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+input {
+	font-weight: 500;
+	border-color: var(#11ffee00) !important;
+	color: var(#11ffee00);
+	width: 400px !important;
+	background-color: #11ffee00;
+	border: 0px solid #11ffee00;
+	font-size: 25px;
+	outline: none;
+	margin: 0 auto;
+	display: block;
+}
+
+button {
+	width: 37.2%;
+	border: none;
+	outline: 0;
+	border-radius: 5px;
+	padding: 10px;
+	transition: background .2s;
+	font-family: 'Poppins', cursive;
+	font-weight: bold;
+	background: var(--softBlack);
+	color: var(--white);
+	font-size: 150%;
+	cursor: pointer;
+}
+
+button:hover {
+	background: var(--softBlack);
+}
+
+input[type=text] {
+	width: 30000px;
+	padding: 0;
+	height: 60px;
+	position: relative;
+	left: 30;
+	outline: none;
+	border-radius: 0px;
+	border: 1px solid #cdcdcd;
+	border-color: rgba(0, 0, 0, .15);
+	background-color: #11ffee00;
+	font-size: 18px;
+}
+
+input.wide {
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.advancedSearchTextbox {
+	width: 2000px;
+	margin-right: -2000px;
+}
+
+.btn {
+	margin: 4px 0;
+	display: block;
+	border: none;
+	outline: 0;
+	border-radius: 5px;
+	padding: 10px;
+	color: var(--white);
+	transition: background .2s;
+	font-family: 'Poppins', cursive;
+	font-weight: bold;
+	background: var(--softBlack);
+	font-size: 100%;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: var(--softBlack);
+}
+
+.uploadButtonDiv {
+	float: left;
+	border-radius: 8px;
+	text-align: center;
+	width: 130px;
+	height: 27px;
+	background-color: var(--softBlack);
+}
+
+.uploadButton {
+	padding-top: 15px;
+	color: var(--yellow);
+	text-decoration: none;
+}
+
+.sourceButtonDiv {
+	float: right;
+	margin-right: 730px;
+	border-radius: 8px;
+	text-align: center;
+	width: 140px;
+	height: 27px;
+	background-color: var(--softBlack);
+}
+
+.sourceButton {
+	padding-top: 15px;
+	color: var(--yellow);
+	text-decoration: none;
+}
+
+.homeButtonDiv {
+	float: left;
+	border-radius: 8px;
+	text-align: center;
+	width: 140px;
+	height: 27px;
+	background-color: var(--softBlack);
+}
+
+.homeButton {
+	padding-top: 15px;
+	color: var(--yellow);
+	text-decoration: none;
+}
+
+.text {
+	color: var(--white);
+	font-weight: 500;
+}
+
+.uploadBody {
+	padding-top: 50px;
+	padding-left: 160px;
+	padding-right: 160px;
+}
+
+.successBody {
+	padding-top: 50px;
+	padding-left: 160px;
+	padding-right: 160px;
+}
+
+@media only screen and (max-width: 640px) {
+	body {
+		padding: 50px;
+	}
+
+	button {
+		margin-top: 10px;
+		width: 240px;
+	}
+
+	.btn {
+		width: 220px;
+	}
+
+	.sourceButtonDiv {
+		float: left;
+		margin-right: 0px !important;
+	}
+
+	.homeButtonDiv {
+		margin-top: 10px;
+	}
+
+	.uploadButtonDiv {
+		width: 110px;
+		margin-right: 10px;
+	}
+}
+
+body {
+	margin: auto;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	overflow: auto;
+	background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(255, 25, 25, 1) 98%);
+	animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+	background-attachment: fixed;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	50% {
+		background-position: 100% 100%;
+	}
+
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+.wave {
+	background: rgb(255 255 255 / 25%);
+	border-radius: 1000% 1000% 0 0;
+	position: fixed;
+	width: 200%;
+	height: 12em;
+	animation: wave 10s -3s linear infinite;
+	transform: translate3d(0, 0, 0);
+	opacity: 0.8;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+	bottom: -1.25em;
+	animation: wave 18s linear reverse infinite;
+	opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+	bottom: -2.5em;
+	animation: wave 20s -1s reverse infinite;
+	opacity: 0.9;
+}
+
+@keyframes wave {
+	2% {
+		transform: translateX(1);
+	}
+
+	25% {
+		transform: translateX(-25%);
+	}
+
+	50% {
+		transform: translateX(-50%);
+	}
+
+	75% {
+		transform: translateX(-25%);
+	}
+
+	100% {
+		transform: translateX(1);
+	}
+}
