@@ -1,0 +1,14 @@
+ErrorDocument 404 https://s409s.pages.dev/400
+ErrorDocument 400 https://s409s.pages.dev/400
+ErrorDocument 403 https://s409s.pages.dev/403
+ErrorDocument 401 https://s409s.pages.dev/401
+ErrorDocument 503 https://s409s.pages.dev/503
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteEngine On 
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule "^(.+)favicon\.ico(|\?.+)$"  "/favicon.png" [PT]
