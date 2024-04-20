@@ -47,6 +47,11 @@ body {
 
 }
 
+.button-wrapper {
+    display: inline-block;
+}
+
+
 
 .card-row {
 
